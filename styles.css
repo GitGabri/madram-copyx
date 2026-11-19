@@ -509,19 +509,6 @@ h1 {
   }
 }
 
-@media (min-width: 860px) {
-  .ledger {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3.5rem;
-    grid-auto-flow: column;
-    grid-template-rows: repeat(11, auto);
-  }
-
-  .ledger-head-repeat {
-    display: grid;
-  }
-}
-
 @media (max-width: 800px) {
   .hero {
     padding-top: 2.5rem;
