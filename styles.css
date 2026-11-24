@@ -178,6 +178,66 @@ h1 {
   color: var(--ink-soft);
 }
 
+.hero-tools {
+  margin-top: 2.15rem;
+}
+
+.hero-tools-label {
+  margin: 0 0 0.7rem;
+  color: var(--brass);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero-tools-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0.75rem;
+}
+
+.mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.65rem;
+  background: #141210;
+  border: 1px solid rgba(36, 31, 28, 0.35);
+  box-shadow: var(--shadow);
+}
+
+.mark img {
+  display: block;
+}
+
+.mark-tag {
+  padding: 0 1.15rem;
+}
+
+.mark-tag img {
+  height: 1.45rem;
+  width: auto;
+}
+
+.mark-jetup {
+  position: relative;
+  width: 9.4rem;
+  padding: 0;
+  overflow: hidden;
+}
+
+.mark-jetup img {
+  position: absolute;
+  width: 351%;
+  max-width: none;
+  height: auto;
+  left: 50%;
+  top: -38%;
+  transform: translateX(-50%);
+}
+
 .result {
   margin: 0;
   padding: 1.6rem 1.5rem 1.45rem;
@@ -203,6 +263,11 @@ h1 {
   line-height: 0.95;
   color: var(--moss);
   font-variant-numeric: tabular-nums;
+}
+
+.result-value-caution {
+  color: var(--clay);
+  font-size: clamp(2.35rem, 5vw, 3.35rem);
 }
 
 .result-detail strong {
@@ -517,6 +582,10 @@ h1 {
   font-size: 0.98rem;
   line-height: 1.6;
   color: #d9cbb8;
+}
+
+.footer-meta a {
+  color: inherit;
 }
 
 .footer-meta {
