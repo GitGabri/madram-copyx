@@ -255,6 +255,10 @@ h1 {
   scroll-margin-top: 5.5rem;
 }
 
+#dates {
+  scroll-margin-top: 5.5rem;
+}
+
 .section-head {
   max-width: var(--measure);
   margin-bottom: 1.75rem;
@@ -269,6 +273,43 @@ h1 {
 .section-head p,
 .share p {
   margin: 0 0 1rem;
+}
+
+.milestones {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.milestones li {
+  display: grid;
+  grid-template-columns: 11.5rem 1fr;
+  gap: 0.4rem 2rem;
+  padding: 1.55rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.milestones li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.milestones time {
+  font-family: var(--serif);
+  font-weight: 560;
+  font-size: 1.2rem;
+  letter-spacing: -0.03em;
+  color: var(--brass);
+  padding-top: 0.2rem;
+}
+
+.milestones h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.5rem;
+}
+
+.milestones p {
+  margin: 0;
+  color: var(--ink-soft);
 }
 
 .chart-card {
@@ -551,6 +592,11 @@ h1 {
   h1 {
     max-width: 100%;
     font-size: clamp(2.15rem, 8.8vw, 2.7rem);
+  }
+
+  .milestones li {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
   }
 
   .result {
